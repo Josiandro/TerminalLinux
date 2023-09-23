@@ -31,7 +31,7 @@ Comandos coringa:
 ?   - Caracter coringa (o ? significa que aceita qualquer caracter no lugar o ?)
     cat arquivo?.txt (vai encontrar tanto o arquivo1.txt, quanto o arquivo2.txt)
     ls -l *.t?t
-*   - Caracter coringa (o * significa que aceita qualquer sequência no lugar o *)
+*   - Caracter coringa (o * significa que aceita qualquer sequência no lugar do *)
     cat arquivo*.txt (vai encontrar o arquivo1.txt, arquivo2.txt e arquivo10.txt)
     ls -l *.txt
 

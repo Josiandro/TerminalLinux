@@ -16,6 +16,13 @@ mv -r - Mover diretórios
 cp -r - Usado para copiar diretórios
 /     - É a raiz do HD no Linux, o mesmo que o c: no Windows
 /home - É onde ficam os usuários, o mesmo que o Users do Windows
+zip   - É usado para compactar diretórios
+        zip -r work.zip workspace/ (r é recursivo)
+        -r usa o modo silencioso
+unzip - É usado para descompactar/listar os arquivos do .zip
+        unzip -l work.zip (vai listar os arquivos)
+        unzip work.zip (vai descompactar os arquivos)
+        -r usa o modo silencioso
 
 ------------------------------------------------------------------
 

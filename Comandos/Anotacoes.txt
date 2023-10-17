@@ -1,48 +1,52 @@
-Comandos de diretórios:
+Comandos para trabalhar com diretórios/pastas:
 
 pwd   - Exibe o diretório atual
-ls    - Lista os arquivos do diretório
-    ls -l  - Listagem em formato longo
-    ls -la - Listagem em formato longo, sem ignorar arquivos e pastas ocultos
-cd    - Mudar de diretório (usando só o cd, vai voltar para o diretório base)
-.     - Diretório atual
-..    - Retornar para o diretório anterior
-    cd ..
-mkdir - Criar novo diretório
-rmdir - Remover/apagar um diretório
-/     - É a raiz do HD no Linux, o mesmo que o c: no Windows
-/home - É onde ficam os usuário, o mesmo que o Users do Windows
+ls    - Listar arquivos e diretórios
+        ls -l  - Listagem em formato longo
+        ls -la - Listagem em formato longo, sem ignorar arquivos e pastas ocultos
+cd    - Acessar um diretório (usando só o cd, vai voltar para o diretório base)
+.     - Equivalente ao diretório atual
+..    - Voltar um nível em relação ao diretório atual
+../.. - Voltar dois níveis em relação ao diretório atual
+mkdir - Criar um novo diretório/pasta
+rmdir - Remover um diretório/pasta que esteja vazio
 rm -r - Usado para apagar diretórios de forma recursiva, apagando também seus arquivos
         rm -r /Tarefas
+mv -r - Mover diretórios
+cp -r - Usado para copiar diretórios
+/     - É a raiz do HD no Linux, o mesmo que o c: no Windows
+/home - É onde ficam os usuários, o mesmo que o Users do Windows
 
----------------------------------------------------------------------------------------------
-Comandos de arquivos:
+------------------------------------------------------------------
 
-cat - Mostra o conteúdo de um arquivo de texto
-    cat -n - Mostra os números das linhas
+Comandos considerados curingas:
+
+? - Aceita qualquer caracter no lugar dele
+    ls -la consulta?.log
+    Resultado: consulta1.log consulta2.log, consulta3.log
+* - Qualquer coisa (qualquer arquivo com a extensão .log, por exemplo)
+    *.log
+
+------------------------------------------------------------------
+
+Comandos para trabalhar com arquivos:
+
+cat - Mostra o conteúdo do arquivo
+      cat -n - Mostra os números das linhas
 >   - Redirecionamento da saída
-    echo "Bem vindo" > bemvindo.txt (sobrescreve o arquivo com este conteúdo)
+      echo "Bem vindo" > bemvindo.txt (sobrescreve o arquivo com este conteúdo)
 >>  - Adiciona/concatena a informação em um arquivo já existente
-rm  - Apagar um arquivo
+rm  - Deletar arquivos
+cp  - Faz a cópia de arquivos
+mv  - Mover arquivos ou renomear arquivos
 
----------------------------------------------------------------------------------------------
-Comandos coringa:
+------------------------------------------------------------------
 
-?   - Caracter coringa (o ? significa que aceita qualquer caracter no lugar o ?)
-    cat arquivo?.txt (vai encontrar tanto o arquivo1.txt, quanto o arquivo2.txt)
-    ls -l *.t?t
-*   - Caracter coringa (o * significa que aceita qualquer sequência no lugar do *)
-    cat arquivo*.txt (vai encontrar o arquivo1.txt, arquivo2.txt e arquivo10.txt)
-    ls -l *.txt
+Comandos do terminal:
 
----------------------------------------------------------------------------------------------
-Outros comandos:
-
-clear - Limpar o terminal
-echo - Exibir uma mensagem na tela
-    echo Bem vindo
-man  - Listar a documentação de algum comando
-    man ls
+clear  - Limpar o terminal
+echo   - Exibir uma mensagem na tela
+         echo Bem vindo
+man    - Listar a documentação de algum comando
+         man ls
 whoami - Mostra o nome do usuário logado
-
----------------------------------------------------------------------------------------------
